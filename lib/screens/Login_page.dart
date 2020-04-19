@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:todoapp/screens/Register_Page.dart';
+import 'package:todoapp/screens/bottom.dart';
+import 'package:todoapp/screens/dashboard.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -128,19 +130,25 @@ class _LoginPageState extends State<LoginPage> {
                     SizedBox(
                       height: screenData.height * 0.01,
                     ),
-                    SizedBox(
-                      height: screenData.height * 0.07,
-                      width: screenData.width * 1.0,
-                      child: Container(
-                        decoration: BoxDecoration(
-                            gradient: LinearGradient(
-                                colors: [Color(0xFFf45d27), Color(0xFFf5851f)]),
-                            borderRadius: BorderRadius.circular(50)),
-                        child: Center(
-                            child: Text(
-                          "LOGIN",
-                          style: TextStyle(color: Colors.white, fontSize: 20),
-                        )),
+                    GestureDetector(
+                      onTap: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => Bottom()));
+
+                      },
+                      child: SizedBox(
+                        height: screenData.height * 0.07,
+                        width: screenData.width * 1.0,
+                        child: Container(
+                          decoration: BoxDecoration(
+                              gradient: LinearGradient(
+                                  colors: [Color(0xFFf45d27), Color(0xFFf5851f)]),
+                              borderRadius: BorderRadius.circular(50)),
+                          child: Center(
+                              child: Text(
+                            "LOGIN",
+                            style: TextStyle(color: Colors.white, fontSize: 20),
+                          )),
+                        ),
                       ),
                     ),
                     SizedBox(

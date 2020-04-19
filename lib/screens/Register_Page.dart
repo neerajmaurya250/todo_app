@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:todoapp/screens/Login_page.dart';
 
 class RegisterPage extends StatefulWidget {
   @override
@@ -25,7 +26,7 @@ class _RegisterPageState extends State<RegisterPage> {
                         end: Alignment.bottomCenter,
                         colors: [Color(0xFFf45d27), Color(0xFFf5851f)]),
                     borderRadius:
-                    BorderRadius.only(bottomLeft: Radius.circular(100))),
+                        BorderRadius.only(bottomLeft: Radius.circular(100))),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
@@ -63,7 +64,36 @@ class _RegisterPageState extends State<RegisterPage> {
                             BoxShadow(color: Colors.grey, blurRadius: 10)
                           ]),
                       child: TextField(
-
+                        cursorColor: Color(0xFFf5851f),
+                        decoration: InputDecoration(
+                            prefixIcon: Icon(
+                              Icons.person,
+                              color: Colors.grey,
+                            ),
+                            fillColor: Colors.white,
+                            filled: true,
+                            hintText: 'Full Name',
+                            enabledBorder: OutlineInputBorder(
+                              borderSide: BorderSide(
+                                  color: Colors.transparent, width: 2.0),
+                              borderRadius: BorderRadius.circular(50.0),
+                            ),
+                            focusedBorder: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                    color: Colors.transparent, width: 2.0),
+                                borderRadius: BorderRadius.circular(50.0))),
+                      ),
+                    ),
+                    SizedBox(
+                      height: screenData.height * 0.02,
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(50),
+                          boxShadow: [
+                            BoxShadow(color: Colors.grey, blurRadius: 10)
+                          ]),
+                      child: TextField(
                         cursorColor: Color(0xFFf5851f),
                         decoration: InputDecoration(
                             prefixIcon: Icon(
@@ -85,7 +115,37 @@ class _RegisterPageState extends State<RegisterPage> {
                       ),
                     ),
                     SizedBox(
-                      height: screenData.height * 0.03,
+                      height: screenData.height * 0.02,
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(50),
+                          boxShadow: [
+                            BoxShadow(color: Colors.grey, blurRadius: 10)
+                          ]),
+                      child: TextField(
+                        cursorColor: Color(0xFFf5851f),
+                        decoration: InputDecoration(
+                            prefixIcon: Icon(
+                              FontAwesomeIcons.idBadge,
+                              color: Colors.grey,
+                            ),
+                            fillColor: Colors.white,
+                            filled: true,
+                            hintText: 'Employee ID',
+                            enabledBorder: OutlineInputBorder(
+                              borderSide: BorderSide(
+                                  color: Colors.transparent, width: 2.0),
+                              borderRadius: BorderRadius.circular(50.0),
+                            ),
+                            focusedBorder: OutlineInputBorder(
+                                borderSide: BorderSide(
+                                    color: Colors.transparent, width: 2.0),
+                                borderRadius: BorderRadius.circular(50.0))),
+                      ),
+                    ),
+                    SizedBox(
+                      height: screenData.height * 0.02,
                     ),
                     Container(
                       decoration: BoxDecoration(
@@ -115,17 +175,8 @@ class _RegisterPageState extends State<RegisterPage> {
                                 borderRadius: BorderRadius.circular(50.0))),
                       ),
                     ),
-                    Align(
-                      alignment: Alignment.centerRight,
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Container(
-                          child: Text("Forgot Password?"),
-                        ),
-                      ),
-                    ),
                     SizedBox(
-                      height: screenData.height * 0.01,
+                      height: screenData.height * 0.04,
                     ),
                     SizedBox(
                       height: screenData.height * 0.07,
@@ -137,61 +188,36 @@ class _RegisterPageState extends State<RegisterPage> {
                             borderRadius: BorderRadius.circular(50)),
                         child: Center(
                             child: Text(
-                              "LOGIN",
-                              style: TextStyle(color: Colors.white, fontSize: 20),
-                            )),
+                          "REGISTER",
+                          style: TextStyle(color: Colors.white, fontSize: 20),
+                        )),
                       ),
                     ),
                     SizedBox(
                       height: screenData.height * 0.01,
                     ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        Container(
-                          height: 40,
-                          width: 40,
-                          decoration: BoxDecoration(
-                              color: Color.fromRGBO(66, 103, 178, 1.0),
-                              borderRadius: BorderRadius.circular(50)),
-                          child: Icon(
-                            FontAwesomeIcons.facebook,
-                            color: Colors.white,
-                          ),
-                        ),
-                        SizedBox(
-                          width: 20,
-                        ),
-                        Container(
-                          height: 40,
-                          width: 40,
-                          decoration: BoxDecoration(
-                              color: Color.fromRGBO(219, 68, 55, 1.0),
-                              borderRadius: BorderRadius.circular(50)),
-                          child: Icon(
-                            FontAwesomeIcons.google,
-                            color: Colors.white,
-                          ),
-                        ),
-                      ],
+                    SizedBox(
+                      height: screenData.height * 0.02,
                     ),
-                    SizedBox(height: screenData.height * 0.02,),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
                         Container(
                           child: Text(
-                            "Don't have an account?",
+                            "Already have an account?",
                             style: TextStyle(color: Colors.grey[600]),
                           ),
                         ),
                         GestureDetector(
-                          onTap: (){
-
+                          onTap: () {
+                            Navigator.pop(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => LoginPage()));
                           },
                           child: Container(
                             child: Text(
-                              " Register",
+                              " Login",
                               style: TextStyle(color: Color(0xFFf45d27)),
                             ),
                           ),
