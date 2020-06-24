@@ -12,7 +12,7 @@ class _ProfileState extends State<Profile> {
     return Container(
       decoration: BoxDecoration(
         gradient: LinearGradient(
-          colors: [Colors.red[800],Colors.amber[200]],
+          colors: [Colors.green[800],Colors.amber[100]],
           begin: Alignment.bottomRight,
           end: Alignment.topLeft
 

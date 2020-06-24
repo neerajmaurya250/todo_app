@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:todoapp/screens/bottomBar/todo_list.dart';
-
 import 'bottomBar/users.dart';
 import 'bottomBar/dashboard.dart';
 import 'bottomBar/profile.dart';
@@ -38,7 +37,6 @@ class BottomState extends State<Bottom> {
             icon: Icon(Icons.more_vert,color: Color(0xFFf45d27),),
             tooltip: 'Show Snackbar',
             onPressed: () {
-              //TODO popup out button
             },
           )
         ],

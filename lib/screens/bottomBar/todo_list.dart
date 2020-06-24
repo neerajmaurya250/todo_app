@@ -11,226 +11,224 @@ class _TodoListState extends State<TodoList> {
     return Container(
       decoration: BoxDecoration(
           gradient: LinearGradient(
-              colors: [Colors.red[800],Colors.amber[200]],
+              colors: [Colors.purple[800], Colors.green[200]],
               begin: Alignment.bottomRight,
-              end: Alignment.topLeft
-
-          )
+              end: Alignment.topLeft)),
+      child: SingleChildScrollView(
+        child: Column(
+          children: <Widget>[
+            Card(
+              margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
+              child: ListTile(
+                leading: CircleAvatar(
+                  radius: 25.0,
+                  backgroundColor: Colors.red[500],
+                ),
+                title: Text('Task Name'),
+                subtitle: Text('task details'),
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
+              child: ListTile(
+                leading: CircleAvatar(
+                  radius: 25.0,
+                  backgroundColor: Colors.red[500],
+                ),
+                title: Text('Task Name'),
+                subtitle: Text('task details'),
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
+              child: ListTile(
+                leading: CircleAvatar(
+                  radius: 25.0,
+                  backgroundColor: Colors.green[500],
+                ),
+                title: Text('Task Name'),
+                subtitle: Text('task details'),
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
+              child: ListTile(
+                leading: CircleAvatar(
+                  radius: 25.0,
+                  backgroundColor: Colors.green[500],
+                ),
+                title: Text('Task Name'),
+                subtitle: Text('task details'),
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
+              child: ListTile(
+                leading: CircleAvatar(
+                  radius: 25.0,
+                  backgroundColor: Colors.green[500],
+                ),
+                title: Text('Task Name'),
+                subtitle: Text('task details'),
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
+              child: ListTile(
+                leading: CircleAvatar(
+                  radius: 25.0,
+                  backgroundColor: Colors.red[500],
+                ),
+                title: Text('Task Name'),
+                subtitle: Text('task details'),
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
+              child: ListTile(
+                leading: CircleAvatar(
+                  radius: 25.0,
+                  backgroundColor: Colors.red[500],
+                ),
+                title: Text('Task Name'),
+                subtitle: Text('task details'),
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
+              child: ListTile(
+                leading: CircleAvatar(
+                  radius: 25.0,
+                  backgroundColor: Colors.green[500],
+                ),
+                title: Text('Task Name'),
+                subtitle: Text('task details'),
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
+              child: ListTile(
+                leading: CircleAvatar(
+                  radius: 25.0,
+                  backgroundColor: Colors.red[500],
+                ),
+                title: Text('Task Name'),
+                subtitle: Text('task details'),
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
+              child: ListTile(
+                leading: CircleAvatar(
+                  radius: 25.0,
+                  backgroundColor: Colors.red[500],
+                ),
+                title: Text('Task Name'),
+                subtitle: Text('task details'),
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
+              child: ListTile(
+                leading: CircleAvatar(
+                  radius: 25.0,
+                  backgroundColor: Colors.red[500],
+                ),
+                title: Text('Task Name'),
+                subtitle: Text('task details'),
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
+              child: ListTile(
+                leading: CircleAvatar(
+                  radius: 25.0,
+                  backgroundColor: Colors.red[500],
+                ),
+                title: Text('Task Name'),
+                subtitle: Text('task details'),
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
+              child: ListTile(
+                leading: CircleAvatar(
+                  radius: 25.0,
+                  backgroundColor: Colors.red[500],
+                ),
+                title: Text('Task Name'),
+                subtitle: Text('task details'),
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
+              child: ListTile(
+                leading: CircleAvatar(
+                  radius: 25.0,
+                  backgroundColor: Colors.red[500],
+                ),
+                title: Text('Task Name'),
+                subtitle: Text('task details'),
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
+              child: ListTile(
+                leading: CircleAvatar(
+                  radius: 25.0,
+                  backgroundColor: Colors.red[500],
+                ),
+                title: Text('Task Name'),
+                subtitle: Text('task details'),
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
+              child: ListTile(
+                leading: CircleAvatar(
+                  radius: 25.0,
+                  backgroundColor: Colors.red[500],
+                ),
+                title: Text('Task Name'),
+                subtitle: Text('task details'),
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
+              child: ListTile(
+                leading: CircleAvatar(
+                  radius: 25.0,
+                  backgroundColor: Colors.red[500],
+                ),
+                title: Text('Task Name'),
+                subtitle: Text('task details'),
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
+              child: ListTile(
+                leading: CircleAvatar(
+                  radius: 25.0,
+                  backgroundColor: Colors.red[500],
+                ),
+                title: Text('Task Name'),
+                subtitle: Text('task details'),
+              ),
+            ),
+            Card(
+              margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
+              child: ListTile(
+                leading: CircleAvatar(
+                  radius: 25.0,
+                  backgroundColor: Colors.red[500],
+                ),
+                title: Text('Task Name'),
+                subtitle: Text('task details'),
+              ),
+            ),
+          ],
+        ),
       ),
-  child: SingleChildScrollView(
-    child: Column(
-      children: <Widget>[
-        Card(
-          margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
-          child: ListTile(
-            leading: CircleAvatar(
-              radius: 25.0,
-              backgroundColor: Colors.red[500],
-            ),
-            title: Text('Task Name'),
-            subtitle: Text('task details'),
-          ),
-        ),
-        Card(
-          margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
-          child: ListTile(
-            leading: CircleAvatar(
-              radius: 25.0,
-              backgroundColor: Colors.red[500],
-            ),
-            title: Text('Task Name'),
-            subtitle: Text('task details'),
-          ),
-        ),
-        Card(
-          margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
-          child: ListTile(
-            leading: CircleAvatar(
-              radius: 25.0,
-              backgroundColor: Colors.green[500],
-            ),
-            title: Text('Task Name'),
-            subtitle: Text('task details'),
-          ),
-        ),
-        Card(
-          margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
-          child: ListTile(
-            leading: CircleAvatar(
-              radius: 25.0,
-              backgroundColor: Colors.green[500],
-            ),
-            title: Text('Task Name'),
-            subtitle: Text('task details'),
-          ),
-        ),Card(
-          margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
-          child: ListTile(
-            leading: CircleAvatar(
-              radius: 25.0,
-              backgroundColor: Colors.green[500],
-            ),
-            title: Text('Task Name'),
-            subtitle: Text('task details'),
-          ),
-        ),Card(
-          margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
-          child: ListTile(
-            leading: CircleAvatar(
-              radius: 25.0,
-              backgroundColor: Colors.red[500],
-            ),
-            title: Text('Task Name'),
-            subtitle: Text('task details'),
-          ),
-        ),
-        Card(
-          margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
-          child: ListTile(
-            leading: CircleAvatar(
-              radius: 25.0,
-              backgroundColor: Colors.red[500],
-            ),
-            title: Text('Task Name'),
-            subtitle: Text('task details'),
-          ),
-        ),
-        Card(
-          margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
-          child: ListTile(
-            leading: CircleAvatar(
-              radius: 25.0,
-              backgroundColor: Colors.green[500],
-            ),
-            title: Text('Task Name'),
-            subtitle: Text('task details'),
-          ),
-        ),
-        Card(
-          margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
-          child: ListTile(
-            leading: CircleAvatar(
-              radius: 25.0,
-              backgroundColor: Colors.red[500],
-            ),
-            title: Text('Task Name'),
-            subtitle: Text('task details'),
-          ),
-        ),Card(
-          margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
-          child: ListTile(
-            leading: CircleAvatar(
-              radius: 25.0,
-              backgroundColor: Colors.red[500],
-            ),
-            title: Text('Task Name'),
-            subtitle: Text('task details'),
-          ),
-        ),Card(
-          margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
-          child: ListTile(
-            leading: CircleAvatar(
-              radius: 25.0,
-              backgroundColor: Colors.red[500],
-            ),
-            title: Text('Task Name'),
-            subtitle: Text('task details'),
-          ),
-        ),
-        Card(
-          margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
-          child: ListTile(
-            leading: CircleAvatar(
-              radius: 25.0,
-              backgroundColor: Colors.red[500],
-            ),
-            title: Text('Task Name'),
-            subtitle: Text('task details'),
-          ),
-        ),Card(
-          margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
-          child: ListTile(
-            leading: CircleAvatar(
-              radius: 25.0,
-              backgroundColor: Colors.red[500],
-            ),
-            title: Text('Task Name'),
-            subtitle: Text('task details'),
-          ),
-        ),Card(
-          margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
-          child: ListTile(
-            leading: CircleAvatar(
-              radius: 25.0,
-              backgroundColor: Colors.red[500],
-            ),
-            title: Text('Task Name'),
-            subtitle: Text('task details'),
-          ),
-        ),Card(
-          margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
-          child: ListTile(
-            leading: CircleAvatar(
-              radius: 25.0,
-              backgroundColor: Colors.red[500],
-            ),
-            title: Text('Task Name'),
-            subtitle: Text('task details'),
-          ),
-        ),Card(
-          margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
-          child: ListTile(
-            leading: CircleAvatar(
-              radius: 25.0,
-              backgroundColor: Colors.red[500],
-            ),
-            title: Text('Task Name'),
-            subtitle: Text('task details'),
-          ),
-        ),Card(
-          margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
-          child: ListTile(
-            leading: CircleAvatar(
-              radius: 25.0,
-              backgroundColor: Colors.red[500],
-            ),
-            title: Text('Task Name'),
-            subtitle: Text('task details'),
-          ),
-        ),Card(
-          margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
-          child: ListTile(
-            leading: CircleAvatar(
-              radius: 25.0,
-              backgroundColor: Colors.red[500],
-            ),
-            title: Text('Task Name'),
-            subtitle: Text('task details'),
-          ),
-        ),Card(
-          margin: EdgeInsets.fromLTRB(20.0, 6.0, 20.0, 0.0),
-          child: ListTile(
-            leading: CircleAvatar(
-              radius: 25.0,
-              backgroundColor: Colors.red[500],
-            ),
-            title: Text('Task Name'),
-            subtitle: Text('task details'),
-          ),
-        ),
-
-
-
-
-
-
-
-
-
-      ],
-    ),
-  ),
-
     );
   }
 }

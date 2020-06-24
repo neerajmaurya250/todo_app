@@ -13,7 +13,7 @@ class _DashboardState extends State<Dashboard> {
     return Container(
       decoration: BoxDecoration(
           gradient: LinearGradient(
-              colors: [Colors.red[800],Colors.amber[200]],
+              colors: [Colors.green[800],Colors.amber[200]],
               begin: Alignment.bottomRight,
               end: Alignment.topLeft
 
