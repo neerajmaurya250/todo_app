@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:toast/toast.dart';
+import 'package:todoapp/auth/auth_services.dart';
 import 'package:todoapp/screens/Login_page.dart';
-import 'package:todoapp/services/auth.dart';
 
 class RegisterPage extends StatefulWidget {
   @override
@@ -12,7 +11,7 @@ class RegisterPage extends StatefulWidget {
 
 class _RegisterPageState extends State<RegisterPage> {
 
-//  final AuthService _auth = AuthService();
+  final AuthServices _auth = AuthServices();
   final _formKey = GlobalKey<FormState>();
 
   String error = '';
@@ -20,6 +19,7 @@ class _RegisterPageState extends State<RegisterPage> {
   String email = '';
   String empId = '';
   String password = '';
+  int user;
 
   @override
   Widget build(BuildContext context) {
@@ -233,6 +233,7 @@ class _RegisterPageState extends State<RegisterPage> {
                               }
                             }
                           },*/
+                          onTap: onRegisterClick,
                           child: Container(
                             decoration: BoxDecoration(
                                 gradient: LinearGradient(
@@ -286,6 +287,13 @@ class _RegisterPageState extends State<RegisterPage> {
         ),
       ),
     );
+  }
+
+  void onRegisterClick() async{
+    if(_formKey.currentState.validate()){
+      dynamic result = await _auth.registerWithEmailAndPassword(email, password, name, empId, user);
+      Navigator.pop(context);
+    }
   }
   /*void showToast(String msg, {int duration, int gravity}) {
     Toast.s how(msg, context, duration: duration, gravity: gravity);
