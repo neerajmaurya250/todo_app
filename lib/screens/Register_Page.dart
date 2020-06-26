@@ -291,7 +291,7 @@ class _RegisterPageState extends State<RegisterPage> {
 
   void onRegisterClick() async{
     if(_formKey.currentState.validate()){
-      dynamic result = await _auth.registerWithEmailAndPassword(email, password, name, empId, user);
+       await _auth.registerWithEmailAndPassword(email, password, name, empId, user);
       Navigator.pop(context);
     }
   }
