@@ -310,11 +310,9 @@ class _RegisterPageState extends State<RegisterPage> {
   void onRegisterClick() async{
     if(_formKey.currentState.validate()){
       showProgressDialog(true);
-       await _auth.registerWithEmailAndPassword(email, password, name, empId, user);
-      Navigator.pop(context);
+      await _auth.registerWithEmailAndPassword(email, password, name, empId, user);
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>LoginPage()));
     }
   }
-  /*void showToast(String msg, {int duration, int gravity}) {
-    Toast.s how(msg, context, duration: duration, gravity: gravity);
-  }*/
+
 }
