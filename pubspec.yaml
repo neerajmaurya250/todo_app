@@ -30,6 +30,7 @@ dependencies:
   firebase_auth:
   cloud_firestore: ^0.13.5
   toast: ^0.1.5
+  progress_dialog: ^1.2.4
 
 
 dev_dependencies:

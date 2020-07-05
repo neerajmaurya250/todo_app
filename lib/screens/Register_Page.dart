@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:progress_dialog/progress_dialog.dart';
 import 'package:todoapp/auth/auth_services.dart';
 import 'package:todoapp/screens/Login_page.dart';
 
@@ -10,6 +11,7 @@ class RegisterPage extends StatefulWidget {
 }
 
 class _RegisterPageState extends State<RegisterPage> {
+  ProgressDialog pr;
 
   final AuthServices _auth = AuthServices();
   final _formKey = GlobalKey<FormState>();
@@ -20,6 +22,22 @@ class _RegisterPageState extends State<RegisterPage> {
   String empId = '';
   String password = '';
   int user;
+
+  @override
+  void initState() {
+    pr = new ProgressDialog(context,
+    type: ProgressDialogType.Normal, isDismissible: true, showLogs: false);
+    pr.style(message: 'Please wait...');
+    super.initState();
+  }
+
+  showProgressDialog(bool isShow){
+    if(isShow){
+      pr.show();
+    } else {
+      pr.hide();
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -291,6 +309,7 @@ class _RegisterPageState extends State<RegisterPage> {
 
   void onRegisterClick() async{
     if(_formKey.currentState.validate()){
+      showProgressDialog(true);
        await _auth.registerWithEmailAndPassword(email, password, name, empId, user);
       Navigator.pop(context);
     }

@@ -31,9 +31,10 @@ class AuthServices {
       Firestore.instance.collection('users').document(user.uid).setData({
         "email" : email,
         "name" : name,
+        "empId" : empId,
         "uid" : user.uid,
-        "user" : 0,
-        "empId" : empId
+        "userType" : 0,
+
       });
     } catch(e){
       print(e.toString());
